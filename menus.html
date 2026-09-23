@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Nos menus - Vite & Gourmand</title>
+
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+<header>
+    <h1>Vite & Gourmand</h1>
+    <p>Nos menus</p>
+</header>
+
+<nav>
+    <a href="index.html">Accueil</a>
+    <a href="menus.html">Nos menus</a>
+    <a href="connexion.html">Connexion</a>
+    <a href="contact.html">Contact</a>
+</nav>
+
+<main>
+
+<section>
+
+    <h2>Découvrez nos menus</h2>
+
+    <p>
+        Choisissez le menu qui correspond à vos envies
+        et à votre événement.
+    </p>
+
+    <div class="card">
+
+        <h3>Rechercher un menu</h3>
+
+        <label for="prix">Prix maximum :</label>
+        <input type="number" id="prix" placeholder="Ex : 40">
+
+        <br><br>
+
+        <label for="theme">Thème :</label>
+
+        <select id="theme">
+            <option value="">Tous les thèmes</option>
+            <option value="classique">Classique</option>
+            <option value="noel">Noël</option>
+            <option value="paques">Pâques</option>
+            <option value="evenement">Événement</option>
+        </select>
+
+        <br><br>
+
+        <label for="regime">Régime :</label>
+
+        <select id="regime">
+            <option value="">Tous les régimes</option>
+            <option value="classique">Classique</option>
+            <option value="vegetarien">Végétarien</option>
+            <option value="vegan">Vegan</option>
+        </select>
+
+        <br><br>
+
+        <label for="personnes">
+            Nombre minimum de personnes :
+        </label>
+
+        <input
+            type="number"
+            id="personnes"
+            placeholder="Ex : 4"
+        >
+
+    </div>
+
+</section>
+
+
+<section>
+
+    <h2>Nos menus</h2>
+
+    <div class="cards">
+
+        <div
+            class="card menu-card"
+            data-prix="25"
+            data-theme="classique"
+            data-regime="classique"
+            data-personnes="4"
+        >
+
+            <h3>Menu Classique</h3>
+
+            <p>
+                Un menu gourmand pour vos repas en famille.
+            </p>
+
+            <p>
+                <strong>25 € / personne</strong>
+            </p>
+
+            <p>Minimum : 4 personnes</p>
+
+            <p>Thème : Classique</p>
+
+            <p>Régime : Classique</p>
+
+            <a class="btn" href="#">
+                Voir le menu
+            </a>
+
+        </div>
+
+
+        <div
+            class="card menu-card"
+            data-prix="28"
+            data-theme="evenement"
+            data-regime="vegetarien"
+            data-personnes="4"
+        >
+
+            <h3>Menu Végétarien</h3>
+
+            <p>
+                Une sélection savoureuse sans viande.
+            </p>
+
+            <p>
+                <strong>28 € / personne</strong>
+            </p>
+
+            <p>Minimum : 4 personnes</p>
+
+            <p>Thème : Événement</p>
+
+            <p>Régime : Végétarien</p>
+
+            <a class="btn" href="#">
+                Voir le menu
+            </a>
+
+        </div>
+
+
+        <div
+            class="card menu-card"
+            data-prix="35"
+            data-theme="noel"
+            data-regime="classique"
+            data-personnes="6"
+        >
+
+            <h3>Menu Noël</h3>
+
+            <p>
+                Un menu festif pour vos repas de fin d'année.
+            </p>
+
+            <p>
+                <strong>35 € / personne</strong>
+            </p>
+
+            <p>Minimum : 6 personnes</p>
+
+            <p>Thème : Noël</p>
+
+            <p>Régime : Classique</p>
+
+            <a class="btn" href="#">
+                Voir le menu
+            </a>
+
+        </div>
+
+    </div>
+
+</section>
+
+</main>
+
+
+<footer>
+
+    <p>
+        <strong>Vite & Gourmand</strong>
+        - Traiteur à Bordeaux
+    </p>
+
+    <p>
+        Contact : contact@vite-et-gourmand.fr
+    </p>
+
+    <p>
+        <a href="#">Mentions légales</a> |
+        <a href="#">Conditions générales de vente</a>
+    </p>
+
+</footer>
+
+
+<script src="js/app.js"></script>
+
+</body>
+
+</html>

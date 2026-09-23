@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Créer un compte - Vite & Gourmand</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+<header>
+    <h1>Vite & Gourmand</h1>
+    <p>Créer votre compte</p>
+</header>
+
+<nav>
+    <a href="index.html">Accueil</a>
+    <a href="menus.html">Nos menus</a>
+    <a href="connexion.html">Connexion</a>
+    <a href="contact.html">Contact</a>
+</nav>
+
+<main>
+
+<section>
+
+    <h2>Créer un compte client</h2>
+
+    <div class="card">
+
+        <form>
+
+            <label for="nom">Nom :</label>
+            <br>
+            <input type="text" id="nom" name="nom" required>
+
+            <br><br>
+
+            <label for="prenom">Prénom :</label>
+            <br>
+            <input type="text" id="prenom" name="prenom" required>
+
+            <br><br>
+
+            <label for="telephone">Téléphone :</label>
+            <br>
+            <input type="tel" id="telephone" name="telephone" required>
+
+            <br><br>
+
+            <label for="email">Adresse e-mail :</label>
+            <br>
+            <input type="email" id="email" name="email" required>
+
+            <br><br>
+
+            <label for="adresse">Adresse :</label>
+            <br>
+            <input type="text" id="adresse" name="adresse" required>
+
+            <br><br>
+
+            <label for="password">Mot de passe :</label>
+            <br>
+            <input
+                type="password"
+                id="password"
+                name="password"
+                minlength="10"
+                required
+            >
+
+            <p>
+                Le mot de passe doit contenir au minimum 10 caractères,
+                une majuscule, une minuscule, un chiffre et un caractère spécial.
+            </p>
+
+            <label for="password-confirm">
+                Confirmer le mot de passe :
+            </label>
+            <br>
+            <input
+                type="password"
+                id="password-confirm"
+                name="password-confirm"
+                minlength="10"
+                required
+            >
+
+            <br><br>
+
+            <button class="btn" type="submit">
+                Créer mon compte
+            </button>
+
+        </form>
+
+    </div>
+
+</section>
+
+</main>
+
+<footer>
+
+    <p>
+        <strong>Vite & Gourmand</strong>
+        - Traiteur à Bordeaux
+    </p>
+
+    <p>
+        Contact : contact@vite-et-gourmand.fr
+    </p>
+
+    <p>
+        <a href="#">Mentions légales</a> |
+        <a href="#">Conditions générales de vente</a>
+    </p>
+
+</footer>
+
+</body>
+</html>
